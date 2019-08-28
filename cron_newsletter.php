@@ -14,7 +14,6 @@
     $data = $templateNewsletter->searchData();
 
     $subscribers = $wpdb->get_results("SELECT name, email FROM ".$wpdb->prefix."subscribers WHERE status = 1");
-    //var_dump($subscribers);
 
     $i = 0;
 
